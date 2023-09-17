@@ -23,4 +23,23 @@
     <a href="/"> >> Home</a>
   </main>
 </div>
+
+
+<div id="comments">
+  <h2>Comments</h2>
+  <div id="comments-container"></div>
+</div>
+
+
+
+<script src="https://utteranc.es/client.js"
+    repo="nocanstillbb/nocanstillbb.github.io"
+    issue-term="comments - {{ .Date.Format "20060102" }} -  {{ .Title | markdownify }}"
+    theme="github-light"
+    crossorigin="anonymous"
+    async>
+</script>
+
+
+
 {{ partial "footer.html" . }}
