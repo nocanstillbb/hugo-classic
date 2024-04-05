@@ -365,7 +365,7 @@ img, iframe, video {
 
 main {
   hyphens: auto;
-  max-width: 650px;
+  /* max-width: 650px;*/
   margin-left: auto;
   margin-right: auto;
   line-height: 1.5em;
@@ -411,6 +411,7 @@ blockquote {
 /* 在大屏幕上应用特定样式 */
 @media screen and (min-width: 768px) {
     #table-of-contents {
+        z-index:100;
         position: fixed; /* 固定定位，使其悬浮在页面上 */
         top: 50%; /* 上边距为50% */
         right: 15px; /* 右边距为0，将其放在右侧 */
